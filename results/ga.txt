@@ -1064,3 +1064,18 @@ GA Cocomo seed evaluation p=100
 97.716225244992
 64.100332766726
 
+results/ga.txt,ucp,seedsEvaluation
+results/ga.txt,ucp,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
+results/ga.txt,cocomo,seedsEvaluation
