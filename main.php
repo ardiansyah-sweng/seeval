@@ -42,7 +42,7 @@ class Parameters
     {
         $seedsData = new Data;
         $ret = [];
-        foreach ($seedsData->getDataUCP() as $seed) {
+        foreach ($seedsData->getDataCocomo() as $seed) {
             $ret[] = $seed;
         }
         return $ret;
@@ -51,8 +51,8 @@ class Parameters
     function getVariableRanges()
     {
         //return (new VariableRanges())->Agile();
-        //return (new VariableRanges())->CocomoSachan();
-        return (new VariableRanges())->UCP();
+        return (new VariableRanges())->CocomoSachan();
+        //return (new VariableRanges())->UCP();
     }
 }
 
@@ -337,14 +337,14 @@ $parameters->stoppingValue = 0;
 $parameters->popSize = 20;
 
 $settingsParameter = [
-    'processorType' => $parameters->dataProcessorSelections[2]['processorType'],
-    'fileName' => $parameters->dataProcessorSelections[2]['fileName'],
+    'processorType' => $parameters->dataProcessorSelections[1]['processorType'],
+    'fileName' => $parameters->dataProcessorSelections[1]['fileName'],
     'optimizer' => $parameters->optimizers[0],
     'variableRanges' => $parameters->getVariableRanges(),
     'generateType' => $parameters->generateType[1],
     'individuType' => $parameters->individuType[2],
     'experimentType' => $parameters->experimentType[2],
-    'estimator' => $parameters->estimators[0],
+    'estimator' => $parameters->estimators[1],
     'numOfVariable' => count($parameters->getVariableRanges()),
     'maxIter' => $parameters->maxIter,
     'stepSize' => $parameters->stepSize,

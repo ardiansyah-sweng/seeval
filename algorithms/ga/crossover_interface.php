@@ -106,6 +106,7 @@ class OneCutPoint implements CrossoverInterface
     {
         $crossoverGenerator = new CrossoverGenerator;
         $parents = $crossoverGenerator->generateCrossover($population, $crossoverRate);
+
         $ret = [];
         foreach ($parents as $parent) {
             $cutPointIndex = Randomizers::getCutPointIndex($lengthOfChromosome);

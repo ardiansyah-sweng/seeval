@@ -162,6 +162,7 @@ class GA implements OptimizerInterface
         $numOfLastResults = 10;
         if ($iter >= ($numOfLastResults - 1)) {
             $residual = count($analitics) - $numOfLastResults;
+            
             if ($residual === 0 && count(array_unique($analitics)) === 1) {
                 return true;
             }
